@@ -1,0 +1,382 @@
+{
+	"Print to console": {
+	  "tmp_designdocument": {
+		"prefix": "designdocument",
+		"body": [
+		  "---",
+		  "title: $TM_FILENAME_BASE",
+		  "date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		  "tags:",
+		  "  - designdoc",
+		  "---",
+		  "date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		  "# Design document",
+		  "> $TM_FILENAME_BASE",
+		  "## Scope",
+		  " このデザインドキュメントの範囲を書く",
+		  "## Background",
+		  " なぜこのプロポーザルを行っているかという背景を書く",
+		  "## Problem Statement",
+		  " 解決したい問題を書く",
+		  "## Proposal",
+		  " どういうデザインにするか、またその選択肢を選んだ理由をロジカルに書く。分量は、2〜10ページくらいの簡潔なものにする。",
+		  "## その他",
+		  "## 参考リンク",
+		  "- [link](http://example.com)"
+		],
+		"description": "designdocument"
+	  }
+	},
+	"tmp_tasksheet": {
+	  "prefix": "tasksheet",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+		"  - tasksheet",
+		"---",
+		"# 作業タイトル",
+		"- [PBI link](http://example.com)",
+		"------",
+		"## 日時  :$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"# 作業目的",
+		"# 完了条件",
+		"- [ ] 完了条件1",
+		"- [ ] 完了条件2",
+		"# 作業詳細",
+		"# 注意点",
+		"# 参考リンク",
+		"- [link](http://example.com)"
+	  ],
+	  "description": "tasksheet"
+	},
+	"tmp_meeting": {
+	  "prefix": "meeting",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+		"  - meeting",
+		"  - PT",
+		"  - refinement",
+		"  - teamreview",
+		"  - PBR",
+		"  - codereview",
+		"---",
+		"# 会議名:",
+		"------",
+		"## 日時  :$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"##場所  :○○会議室",
+		"##出席者 :☓☓☓",
+		"",
+		"------",
+		"## 決定事項 :",
+		"* xxxxxをxxxxとする",
+		"* xxxxxをxxxxとする",
+		"",
+		"## Next Action :",
+		"[〇〇さん]xxxxをする(Due:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE)",
+		"[〇〇さん]xxxxをする(Due:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE)",
+		"",
+		"## 議題 :",
+		"[〇〇さん]XXXXXXXについて",
+		"[〇〇さん]XXXXXXXとしたい",
+		"",
+		"------",
+		"## 次回会議予定 :",
+		"$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE",
+		"",
+		"以上"
+	  ],
+	  "description": "meeting"
+	},
+	"done_DD": {
+	  "prefix": "done_DD",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE:",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+        "  - tag_SP",
+		"  - tag_done_DD",
+		"---",
+		"# DD書作成:",
+		"## 作成日時:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"## PBI link",
+		"- [PBI link](samplepbi)",
+		"------",
+		"# 成果物格納場所",
+		"- [link](sample)",
+		"# 参考資料リンク",
+		"# backendの場合",
+		"## IF仕様書",
+		"- [link](sample)",
+		"## 処理詳細",
+		"- [link](sample)",
+		"# frontendの場合",
+		"## イベント定義",
+		"- [link](sample)",
+		"# チェックリスト",
+		"- [ ]管理簿変更したか",
+		"- [ ]レビューしたか",
+		"- [ ]成果物を格納したか",
+		"# 注意点",
+		"# その他"
+	  ],
+	  "description": "DD tag"
+	},
+	"done_M": {
+	  "prefix": "done_M",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE:",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+        "  - tag_SP",
+		"  - tag_done_M",
+		"---",
+		"# 実装メモ:",
+		"## 作成日時:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"## PBI link",
+		"- [PBI link](samplepbi)",
+		"## branch name",
+		"------",
+		"# backend",
+		"## IF仕様書",
+		"- [link](sample)",
+		"## 参考Gitリンク",
+		"- [link](sample)",
+		"# チェックリスト",
+		"- [ ] IF仕様書の通りになっているか",
+		"- [ ]",
+		"- [ ]",
+		"# frontend",
+		"## 画面定義書",
+		"- [link](sample)",
+		"## 参考Gitリンク",
+		"- [link](sample)",
+		"## Mockoon格納リンク",
+		"- [link](sample)",
+		"# チェックリスト",
+		"- [ ] WF指示書の通りになっているか",
+		"- [ ] Mockデータが現実のものに即しているか",
+		"- [ ] 変数の命名規則に従っているか",
+		"- [ ] エラーハンドリングを網羅しているか",
+		"# 注意点",
+		"------",
+		"# 作業ログ",
+		"## POに確認すること",
+		"- [ ] xxの場合はどうするか",
+		"## デザインチームに確認すること",
+		"- [ ] WF指示書のxxの場合はどうするか",
+		"## 実装手順",
+		"## 実装の決定要因",
+	],
+	  "description": "Make tag"
+	},
+	"done_UT": {
+	  "prefix": "done_UT",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE:",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+        "  - tag_SP",
+		"  - tag_done_UT",
+		"---",
+		"# UTメモ:",
+		"## 作成日時:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"## PBI link",
+		"- [PBI link](samplepbi)",
+		"# 成果物格納場所",
+		"- [link](sample)",
+		"# チェックリスト",
+		"- [ ] エラーハンドリングを網羅しているか",
+		"- [ ] テストケースを網羅しているか",
+	],
+	  "description": "Unit test tag"
+	},
+	"done_SI-1": {
+	  "prefix": "done_SI-1",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE:",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+        "  - tag_SP",
+		"  - tag_done_SI-1",
+		"---",
+		"# SI-1メモ:",
+		"## 作成日時:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"## PBI link",
+		"- [PBI link](samplepbi)",
+		"# 成果物格納場所",
+		"- [link](sample)",
+		"# チェックリスト",
+		"- [ ] エラーハンドリングを網羅しているか",
+		"- [ ] テストケースを網羅しているか",
+		"- [ ] 証跡格納したか",
+	],
+	  "description": "SI-1 test tag"
+	},
+	"done_SI-2": {
+	  "prefix": "done_SI-2",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE:",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+        "  - tag_SP",
+		"  - tag_done_SI-2",
+		"---",
+		"# SI-2メモ:",
+		"## 作成日時:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"## PBI link",
+		"- [PBI link](samplepbi)",
+		"# 成果物格納場所",
+		"- [link](sample)",
+		"# チェックリスト",
+		"- [ ] エラーハンドリングを網羅しているか",
+		"- [ ] テストケースを網羅しているか",
+		"- [ ] 証跡格納したか",
+	],
+	  "description": "SI-2 test tag"
+	},
+	"done_Demo": {
+	  "prefix": "done_Demo",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE:",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+        "  - tag_SP",
+		"  - tag_done_Demo",
+		"---",
+		"# Demoメモ:",
+		"## 作成日時:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"## PBI link",
+		"- [PBI link](samplepbi)",
+		"# 成果物場所",
+		"- [link](sample)",
+		"# チェックリスト",
+		"- [ ] 受け入れ条件を満たしているか",
+		"- [ ] データが実際のデータに即しているか",
+		"# シナリオ",
+		"# POアドバイス",
+	],
+	  "description": "Demo tag"
+	},
+	"done_CodeReview": {
+	  "prefix": "done_CodeReview",
+	  "body": [
+		"---",
+		"title: $TM_FILENAME_BASE:",
+		"date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"tags:",
+        "  - tag_SP",
+		"  - tag_done_CodeReview",
+		"---",
+		"# CodeReviewメモ:",
+		"## 作成日時:$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_HOUR:$CURRENT_MINUTE",
+		"## PBI link",
+		"- [PBI link](samplepbi)",
+		"# MR場所",
+		"- [link](sample)",
+		"# 説明手順",
+		"- [link](sample)",
+		"# チェックリスト",
+		"- [ ] 理解しづらい箇所を中心的に説明できているか",
+		"- [ ] ",
+	],
+	  "description": "Code review tag"
+	},
+	"agile_Daily": {
+	  "prefix": "agile_Daily",
+	  "body": ["  - agile_Daily"],
+	  "description": "Code review tag"
+	},
+	"agile_PBR": {
+	  "prefix": "agile_PBR",
+	  "body": ["  - agile_PBR"],
+	  "description": "Sprint Backlog Refinement tag"
+	},
+	"agile_Planning": {
+	  "prefix": "agile_Planning",
+	  "body": ["  - agile_Planning"],
+	  "description": "Sprint Backlog Refinement tag"
+	},
+	"agile_Review": {
+	  "prefix": "agile_Review",
+	  "body": ["  - agile_Review"],
+	  "description": "Sprint Backlog Refinement tag"
+	},
+	"agile_Retrospective": {
+	  "prefix": "agile_Retrospective",
+	  "body": ["  - agile_Retrospective"],
+	  "description": "Sprint Retrospective tag"
+	},
+  
+	"tag_done_DD": {
+	  "prefix": "tag_done_DD",
+	  "body": ["  - tag_done_DD"],
+	  "description": "DD tag"
+	},
+	"tag_done_M": {
+	  "prefix": "tag_done_M",
+	  "body": ["  - tag_done_M"],
+	  "description": "Make tag"
+	},
+	"tag_done_UT": {
+	  "prefix": "tag_done_UT",
+	  "body": ["  - tag_done_UT"],
+	  "description": "Unit test tag"
+	},
+	"tag_done_SI-1": {
+	  "prefix": "tag_done_SI-1",
+	  "body": ["  - tag_done_SI-1"],
+	  "description": "SI-1 test tag"
+	},
+	"tag_done_SI-2": {
+	  "prefix": "tag_done_SI-2",
+	  "body": ["  - tag_done_SI-2"],
+	  "description": "SI-2 test tag"
+	},
+	"tag_done_Demo": {
+	  "prefix": "tag_done_Demo",
+	  "body": ["  - tag_done_Demo"],
+	  "description": "Demo tag"
+	},
+	"tag_done_CodeReview": {
+	  "prefix": "tag_done_CodeReview",
+	  "body": ["  - tag_done_CodeReview"],
+	  "description": "Code review tag"
+	},
+	"tag_agile_Daily": {
+	  "prefix": "tag_agile_Daily",
+	  "body": ["  - tag_agile_Daily"],
+	  "description": "Code review tag"
+	},
+	"tag_agile_PBR": {
+	  "prefix": "tag_agile_PBR",
+	  "body": ["  - tag_agile_PBR"],
+	  "description": "Sprint Backlog Refinement tag"
+	},
+	"tag_agile_Planning": {
+	  "prefix": "tag_agile_Planning",
+	  "body": ["  - tag_agile_Planning"],
+	  "description": "Sprint Backlog Refinement tag"
+	},
+	"tag_agile_Review": {
+	  "prefix": "tag_agile_Review",
+	  "body": ["  - tag_agile_Review"],
+	  "description": "Sprint Backlog Refinement tag"
+	},
+	"tag_agile_Retrospective": {
+	  "prefix": "tag_agile_Retrospective",
+	  "body": ["  - tag_agile_Retrospective"],
+	  "description": "Sprint Retrospective tag"
+	}
+  }
+  
