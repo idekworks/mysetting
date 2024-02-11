@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # 入力ファイルパスをコマンドライン引数から取得
-input_file="$1"
+input_file="./手順書/input/$1"
 
 # ファイル名からタイトルを抽出
 title=$(basename "$input_file" .md)
 
 # 出力ファイルを作成
-output_file="${title}.html"
+output_file="./手順書/output/${title}.html"
 
 # HTMLのヘッダを出力
 echo "<!DOCTYPE html>" > "$output_file"
