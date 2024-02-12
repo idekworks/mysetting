@@ -47,7 +47,7 @@ function updateTimer() {
     const hours = Math.floor(elapsedMilliseconds / 3600000);
     const minutes = Math.floor((elapsedMilliseconds % 3600000) / 60000);
     const seconds = Math.floor((elapsedMilliseconds % 60000) / 1000);
-    timerElement.textContent = `time:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    timerElement.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   }
   
   function updateLapTimes() {

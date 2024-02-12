@@ -16,7 +16,7 @@ do
       <title>アジャイルタスクラップタイマー</title>
     </head>
     <body>
-      <p id="timer">00:00:00.000</p>
+      <p id="timer">Push Start</p>
       <div class="button-container">
         <button id="start">スタート</button>
         <button id="stop">ストップ</button>
